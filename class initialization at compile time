@@ -1,0 +1,26 @@
+#include<iostream>
+using namespace std;
+class Student
+{
+    public:
+    int id;
+    string name;
+    string branch;
+    
+    void get_details()
+    {
+        cout<<"id : "<<id<<endl;
+        cout<<"name : "<<name<<endl;
+        cout<<"branch : "<<branch;
+    }
+};
+
+int main()
+{
+    Student s;
+    s.id=1;
+    s.name="Vivek";
+    s.branch="cse";
+    
+    s.get_details();
+}
