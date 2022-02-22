@@ -1,0 +1,23 @@
+#include<iostream>
+using namespace std;
+/*keyword*/class /*class name*/MyClass
+{
+    /*access specifiers*/public:
+    int a, b;
+    /*constructor*/MyClass(int x, int y/*parameters*/)
+    {
+       /*initialization*/ a=x;
+        b=y;
+    }
+    void p()/*for printing*/
+    {
+        cout<<"a : "<<a<<endl;
+        cout<<"b : "<<b<<endl;
+    }
+};
+int main()
+{
+    MyClass m(15, 30 /*value pass*/);
+    m.p(); /*function call*/
+    return 0;
+}
