@@ -1,0 +1,27 @@
+#include<iostream>
+using namespace std;
+class College
+{
+    public:
+    void fun()
+    {
+        cout<<"A function with no arguments"<<endl;
+    }
+    void fun(int a)
+    {
+        cout<<"A function with integer arguments"<<endl;
+    }
+    void fun(double a)
+    {
+        cout<<"A function with double arguments."<<endl;
+    }
+};
+
+int main()
+{
+    College obj;
+    obj.fun();
+    obj.fun(2);
+    obj.fun(8.5);
+    return 0;
+}
