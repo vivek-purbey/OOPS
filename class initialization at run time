@@ -1,0 +1,40 @@
+#include<iostream>
+using namespace std;
+class Student
+{
+    public:
+    int id;
+    string name;
+    string branch;
+    
+    void put_details(int i, string n, string b)
+    {
+    id=i;
+    name=n;
+    branch=b;
+    }
+    
+    void get_details()
+    {
+        cout<<endl;
+        cout<<"Id : "<<id<<endl;
+        cout<<"Name : "<<name<<endl;
+        cout<<"Branch : "<<branch<<".";
+    }
+};
+
+int main()
+{
+    Student s;
+    int s_id;
+    string s_name, s_branch;
+    cout<<"Enter Student id : ";
+    cin>>s_id;
+    cout<<"Enter Student name : ";
+    cin>>s_name;
+    cout<<"Enter Student branch : ";
+    cin>>s_branch;
+    s.put_details(s_id, s_name, s_branch);
+    s.get_details();
+    return 0;
+}
